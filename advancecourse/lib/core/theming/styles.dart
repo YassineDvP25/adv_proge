@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class TextStyles {
-
   
+
+
   static TextStyle font32BlackBold = TextStyle(
     fontSize: 32.sp,
     fontWeight: FontWeight.bold,
