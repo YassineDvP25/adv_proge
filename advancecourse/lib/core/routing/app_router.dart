@@ -1,7 +1,7 @@
 import 'package:advancecourse/core/routing/routes.dart';
 import 'package:advancecourse/features/home/ui/home_screen.dart';
 import 'package:advancecourse/features/login/ui/login_screen.dart';
-import 'package:advancecourse/features/onbording/onboarding_screen.dart';
+import 'package:advancecourse/features/onboarding/onboarding_screen.dart';
 import 'package:advancecourse/features/sign_up/ui/signup_screen.dart';
 import 'package:flutter/material.dart';
 
