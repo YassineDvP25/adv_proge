@@ -11,7 +11,7 @@ class DocImageAndText extends StatelessWidget {
     return Stack(
       children: [
         Container(
-          padding: EdgeInsets.only(left: 40, right: 30),
+          padding: EdgeInsets.only(left: 40.w, right: 30.w),
           child: SvgPicture.asset('assets/svgs/doc_logo_low_opacity.svg'),
         ),
         Container(
@@ -19,7 +19,7 @@ class DocImageAndText extends StatelessWidget {
             gradient: LinearGradient(
               begin: Alignment.bottomCenter,
               end: Alignment.center,
-              stops: [0.14, 0.8],
+              stops: [0.14.h, 0.8.h],
 
               colors: [Colors.white, Colors.white.withValues(alpha: 0.0)],
             ),

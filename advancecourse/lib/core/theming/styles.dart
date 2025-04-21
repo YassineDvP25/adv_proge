@@ -28,5 +28,7 @@ class TextStyles {
     fontSize: 16.sp,
     fontWeight: FontWeight.bold,
     color: Colors.white,
+    fontFamily: 'Inter'
+
   );
 }

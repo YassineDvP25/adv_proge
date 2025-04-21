@@ -122,7 +122,10 @@ flutter:
       fonts:
         - asset: assets/fonts/PlayfairDisplay-VariableFont_wght.ttf
           style: italic
-
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter_28pt-SemiBold.ttf
+          style: italic
   
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package

@@ -1,3 +1,4 @@
+import 'package:advancecourse/core/theming/colors.dart';
 import 'package:advancecourse/core/theming/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -15,7 +16,7 @@ class GetstartedButton extends StatelessWidget {
         shape:  WidgetStatePropertyAll(
           RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
         ),
-        backgroundColor: WidgetStatePropertyAll(Colors.blue),
+        backgroundColor: WidgetStatePropertyAll(ColorsManager.mainBlue),
         minimumSize: WidgetStatePropertyAll(Size(double.infinity, 55.h)),
       ),
 
