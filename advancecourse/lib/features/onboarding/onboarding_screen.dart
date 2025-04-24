@@ -8,9 +8,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
 
-
-  
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,6 +15,7 @@ class OnboardingScreen extends StatelessWidget {
         padding: EdgeInsets.only(top: 30.h, bottom: 30.h),
         child: Column(
           children: [
+            
             DocLogoAndName(),
             SizedBox(height: 50.h),
 
