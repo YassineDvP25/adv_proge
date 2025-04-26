@@ -20,7 +20,7 @@ class GetstartedButton extends StatelessWidget {
         minimumSize: WidgetStatePropertyAll(Size(double.infinity, 55.h)),
       ),
 
-      child: Text('Get Started',style: TextStyles.font16whiteBoldRegular,),
+      child: Text('Get Started',style: TextStyles.font16whiteBold,),
     );
   }
 }
