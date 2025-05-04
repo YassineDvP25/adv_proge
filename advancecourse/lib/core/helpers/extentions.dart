@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
 
-extension Navigation on BuildContext {
+extension Navigations on BuildContext {
   Future<dynamic> pushNamed(String routeName, {Object? arguments}) {
     return Navigator.of(this).pushNamed(routeName, arguments: arguments);
   }

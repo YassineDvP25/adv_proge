@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5ad52ef1-2243-44b1-9ac1-69615a164bef" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/advancecourse/lib/core/helpers/extentions.dart" beforeDir="false" afterPath="$PROJECT_DIR$/advancecourse/lib/core/helpers/extentions.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/advancecourse/lib/core/theming/colors.dart" beforeDir="false" afterPath="$PROJECT_DIR$/advancecourse/lib/core/theming/colors.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/advancecourse/lib/core/theming/styles.dart" beforeDir="false" afterPath="$PROJECT_DIR$/advancecourse/lib/core/theming/styles.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/advancecourse/lib/doc_app.dart" beforeDir="false" afterPath="$PROJECT_DIR$/advancecourse/lib/doc_app.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/advancecourse/lib/features/login/ui/login_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/advancecourse/lib/features/login/ui/login_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/advancecourse/lib/features/onboarding/widgets/doc_getstarted_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/advancecourse/lib/features/onboarding/widgets/doc_getstarted_button.dart" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2wLXpmPgwRengUrI6Ot0WZ5RpjE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "features/login",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/J.P.M/Desktop/dar_tt/flutter.app.test/advance_prog",
+    "settings.editor.selected.configurable": "dart.settings",
+    "show.migrate.to.gradle.popup": "false"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "PLAIN_TEXT"
+    ]
+  }
+}]]></component>
+  <component name="RunManager">
+    <recent_temporary>
+      <list>
+        <item itemvalue="Dart Command Line App.prob.dart" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5ad52ef1-2243-44b1-9ac1-69615a164bef" name="Changes" comment="" />
+      <created>1745822016813</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1745822016813</updated>
+    </task>
+    <servers />
+  </component>
+</project>
