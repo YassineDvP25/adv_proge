@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="prob.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" singleton="false" nameIsGenerated="true">
+    <option name="VMOptions" value="df" />
+    <option name="arguments" value="d" />
+    <option name="filePath" value="$PROJECT_DIR$/advancecourse/lib/prob.dart" />
+    <option name="workingDirectory" value="$PROJECT_DIR$/advancecourse" />
+    <method v="2" />
+  </configuration>
+</component>
