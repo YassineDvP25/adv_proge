@@ -7,10 +7,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class DocApp extends StatelessWidget {
   final AppRouter approuter;
-  const DocApp({super.key, required this.approuter});
+  const DocApp({super.key, required this.approuter}); 
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) { 
     return ScreenUtilInit(
       designSize: Size(375, 812),
       minTextAdapt: true,

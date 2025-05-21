@@ -42,21 +42,21 @@ mixin _$LoginState<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial<T> value) initial,
-    required TResult Function(_Loding<T> value) loding,
+    required TResult Function(Loding<T> value) loding,
     required TResult Function(Success<T> value) success,
     required TResult Function(Error<T> value) error,
   }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial<T> value)? initial,
-    TResult? Function(_Loding<T> value)? loding,
+    TResult? Function(Loding<T> value)? loding,
     TResult? Function(Success<T> value)? success,
     TResult? Function(Error<T> value)? error,
   }) => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial<T> value)? initial,
-    TResult Function(_Loding<T> value)? loding,
+    TResult Function(Loding<T> value)? loding,
     TResult Function(Success<T> value)? success,
     TResult Function(Error<T> value)? error,
     required TResult orElse(),
@@ -166,7 +166,7 @@ class _$InitialImpl<T> implements _Initial<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial<T> value) initial,
-    required TResult Function(_Loding<T> value) loding,
+    required TResult Function(Loding<T> value) loding,
     required TResult Function(Success<T> value) success,
     required TResult Function(Error<T> value) error,
   }) {
@@ -177,7 +177,7 @@ class _$InitialImpl<T> implements _Initial<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial<T> value)? initial,
-    TResult? Function(_Loding<T> value)? loding,
+    TResult? Function(Loding<T> value)? loding,
     TResult? Function(Success<T> value)? success,
     TResult? Function(Error<T> value)? error,
   }) {
@@ -188,7 +188,7 @@ class _$InitialImpl<T> implements _Initial<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial<T> value)? initial,
-    TResult Function(_Loding<T> value)? loding,
+    TResult Function(Loding<T> value)? loding,
     TResult Function(Success<T> value)? success,
     TResult Function(Error<T> value)? error,
     required TResult orElse(),
@@ -227,7 +227,7 @@ class __$$LodingImplCopyWithImpl<T, $Res>
 
 /// @nodoc
 
-class _$LodingImpl<T> implements _Loding<T> {
+class _$LodingImpl<T> implements Loding<T> {
   const _$LodingImpl();
 
   @override
@@ -285,7 +285,7 @@ class _$LodingImpl<T> implements _Loding<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial<T> value) initial,
-    required TResult Function(_Loding<T> value) loding,
+    required TResult Function(Loding<T> value) loding,
     required TResult Function(Success<T> value) success,
     required TResult Function(Error<T> value) error,
   }) {
@@ -296,7 +296,7 @@ class _$LodingImpl<T> implements _Loding<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial<T> value)? initial,
-    TResult? Function(_Loding<T> value)? loding,
+    TResult? Function(Loding<T> value)? loding,
     TResult? Function(Success<T> value)? success,
     TResult? Function(Error<T> value)? error,
   }) {
@@ -307,7 +307,7 @@ class _$LodingImpl<T> implements _Loding<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial<T> value)? initial,
-    TResult Function(_Loding<T> value)? loding,
+    TResult Function(Loding<T> value)? loding,
     TResult Function(Success<T> value)? success,
     TResult Function(Error<T> value)? error,
     required TResult orElse(),
@@ -319,8 +319,8 @@ class _$LodingImpl<T> implements _Loding<T> {
   }
 }
 
-abstract class _Loding<T> implements LoginState<T> {
-  const factory _Loding() = _$LodingImpl<T>;
+abstract class Loding<T> implements LoginState<T> {
+  const factory Loding() = _$LodingImpl<T>;
 }
 
 /// @nodoc
@@ -432,7 +432,7 @@ class _$SuccessImpl<T> implements Success<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial<T> value) initial,
-    required TResult Function(_Loding<T> value) loding,
+    required TResult Function(Loding<T> value) loding,
     required TResult Function(Success<T> value) success,
     required TResult Function(Error<T> value) error,
   }) {
@@ -443,7 +443,7 @@ class _$SuccessImpl<T> implements Success<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial<T> value)? initial,
-    TResult? Function(_Loding<T> value)? loding,
+    TResult? Function(Loding<T> value)? loding,
     TResult? Function(Success<T> value)? success,
     TResult? Function(Error<T> value)? error,
   }) {
@@ -454,7 +454,7 @@ class _$SuccessImpl<T> implements Success<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial<T> value)? initial,
-    TResult Function(_Loding<T> value)? loding,
+    TResult Function(Loding<T> value)? loding,
     TResult Function(Success<T> value)? success,
     TResult Function(Error<T> value)? error,
     required TResult orElse(),
@@ -586,7 +586,7 @@ class _$ErrorImpl<T> implements Error<T> {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial<T> value) initial,
-    required TResult Function(_Loding<T> value) loding,
+    required TResult Function(Loding<T> value) loding,
     required TResult Function(Success<T> value) success,
     required TResult Function(Error<T> value) error,
   }) {
@@ -597,7 +597,7 @@ class _$ErrorImpl<T> implements Error<T> {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial<T> value)? initial,
-    TResult? Function(_Loding<T> value)? loding,
+    TResult? Function(Loding<T> value)? loding,
     TResult? Function(Success<T> value)? success,
     TResult? Function(Error<T> value)? error,
   }) {
@@ -608,7 +608,7 @@ class _$ErrorImpl<T> implements Error<T> {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial<T> value)? initial,
-    TResult Function(_Loding<T> value)? loding,
+    TResult Function(Loding<T> value)? loding,
     TResult Function(Success<T> value)? success,
     TResult Function(Error<T> value)? error,
     required TResult orElse(),

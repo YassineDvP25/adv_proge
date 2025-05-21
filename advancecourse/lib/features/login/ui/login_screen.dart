@@ -1,12 +1,16 @@
 import 'package:advancecourse/core/helpers/spacing.dart';
 import 'package:advancecourse/core/theming/styles.dart';
 import 'package:advancecourse/core/widgets/app_text_form_field.dart';
+import 'package:advancecourse/features/login/data/models/login_request_body.dart';
+import 'package:advancecourse/features/login/logic_cubit/cubit/login_cubit.dart';
 import 'package:advancecourse/features/login/ui/widgets/already_have_anaccount_text.dart';
 import 'package:advancecourse/features/login/ui/widgets/app_text_button.dart';
 import 'package:advancecourse/features/login/ui/widgets/login_alternative.dart';
+import 'package:advancecourse/features/login/ui/widgets/text_form_field/email_and_pasword.dart';
 import 'package:advancecourse/features/login/ui/widgets/text_inside_divider.dart';
 import 'package:advancecourse/features/login/ui/widgets/terms_conditions_privacy_policy_text.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -38,30 +42,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 textAlign: TextAlign.start,
               ),
               verticalSpace(40),
-              Form(
-                key: _formkey,
-                child: Column(
-                  children: [
-                    AppTextFormField(hintText: 'Email'),
-                    verticalSpace(18),
-                    AppTextFormField(
-                      hintText: 'Password',
-                      obscureText: isObscure,
-                      suffixicon: IconButton(
-                        onPressed: () {
-                          setState(() {
-                            isObscure = !isObscure;
-                          });
-                        },
-                        icon:
-                            isObscure
-                                ? Icon(Icons.visibility_off)
-                                : Icon(Icons.visibility),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
+              Column(children: [EmailAndPasword()]),
               verticalSpace(10),
               Align(
                 alignment: AlignmentDirectional.centerEnd,
@@ -72,6 +53,7 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               verticalSpace(40),
               AppTextButton(
+                onPressed: () {},
                 text: 'Login',
                 textStyle: TextStyles.font16blueSemibold,
               ),
@@ -86,6 +68,17 @@ class _LoginScreenState extends State<LoginScreen> {
             ],
           ),
         ),
+      ),
+    );
+  }
+}
+
+void validationDoLogin(BuildContext context) {
+  if (context.read<LoginCubit>().formKey.currentState!.validate()) {
+    context.read<LoginCubit>().emitLoginStates(
+      LoginRequestBody(
+        email: context.read<LoginCubit>().emailController.text,
+        password: context.read<LoginCubit>().passwordController.text,
       ),
     );
   }
