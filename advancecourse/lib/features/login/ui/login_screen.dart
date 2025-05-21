@@ -23,71 +23,67 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 70.h),
-          child: SingleChildScrollView(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text('Welcom Back', style: TextStyles.font24blueBold),
+      body: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 65.h),
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text('Welcom Back', style: TextStyles.font24blueBold),
 
-                verticalSpace(10),
-                Text(
-                  "We're excited to have you back, can't wait to see what you've been up to since you last \nlogged in.",
-                  style: TextStyles.font14bodyRegular,
-                  textAlign: TextAlign.start,
-                ),
-                verticalSpace(40),
-                Form(
-                  key: _formkey,
-                  child: Column(
-                    children: [
-                      AppTextFormField(hintText: 'Email'),
-                      verticalSpace(18),
-                      AppTextFormField(
-                        hintText: 'Password',
-                        obscureText: isObscure,
-                        suffixicon: IconButton(
-                          onPressed: () {
-                            setState(() {
-                              isObscure = !isObscure;
-                            });
-                          },
-                          icon:
-                              isObscure
-                                  ? Icon(Icons.visibility_off)
-                                  : Icon(Icons.visibility),
-                        ),
+              verticalSpace(10),
+              Text(
+                "We're excited to have you back, can't wait to see what you've been up to since you last \nlogged in.",
+                style: TextStyles.font14bodyRegular,
+                textAlign: TextAlign.start,
+              ),
+              verticalSpace(40),
+              Form(
+                key: _formkey,
+                child: Column(
+                  children: [
+                    AppTextFormField(hintText: 'Email'),
+                    verticalSpace(18),
+                    AppTextFormField(
+                      hintText: 'Password',
+                      obscureText: isObscure,
+                      suffixicon: IconButton(
+                        onPressed: () {
+                          setState(() {
+                            isObscure = !isObscure;
+                          });
+                        },
+                        icon:
+                            isObscure
+                                ? Icon(Icons.visibility_off)
+                                : Icon(Icons.visibility),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
-                verticalSpace(10),
-                Align(
-                  alignment: AlignmentDirectional.centerEnd,
-                  child: Text(
-                    'Forgot Password ?',
-                    style: TextStyles.font12blueRegular,
-                  ),
+              ),
+              verticalSpace(10),
+              Align(
+                alignment: AlignmentDirectional.centerEnd,
+                child: Text(
+                  'Forgot Password ?',
+                  style: TextStyles.font12blueRegular,
                 ),
-                verticalSpace(40),
-                AppTextButton(
-                  text: 'Login',
-                  textStyle: TextStyles.font16blueSemibold,
-                ),
-                verticalSpace(40),
-                TextInsideDivider(),
-                verticalSpace(20),
-                LoginAlternative(),
-                verticalSpace(55),
+              ),
+              verticalSpace(40),
+              AppTextButton(
+                text: 'Login',
+                textStyle: TextStyles.font16blueSemibold,
+              ),
+              verticalSpace(40),
+              TextInsideDivider(),
+              verticalSpace(20),
+              LoginAlternative(),
+              verticalSpace(20),
               TermsConditionsPrivacyPolicyText(),
-              verticalSpace(30),
-              AlreadyHaveAccountText()
-                
-              
-              ],
-            ),
+              verticalSpace(60),
+              AlreadyHaveAccountText(),
+            ],
           ),
         ),
       ),
