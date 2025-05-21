@@ -38,8 +38,9 @@ dependencies:
   #state management
   bloc: ^9.0.0
   #Code generetor (mainly used with cubit & retrofit)
-  freezed: ^3.0.6
-  freezed_annotation: ^3.0.0
+  freezed: ^2.4.1
+
+  freezed_annotation: ^2.4.1
   #dependency injection
   get_it: ^8.0.3
   #Automatically generate code for converting to and from JSON by annotating dart
@@ -60,6 +61,7 @@ dependencies:
   flutter_svg: ^2.0.17
   #for addapting screen and font size
   flutter_screenutil: ^5.9.3
+  flutter_bloc: ^9.1.1
 
 
 
@@ -84,6 +86,7 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^5.0.0
+  build_runner: ^2.4.6
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
