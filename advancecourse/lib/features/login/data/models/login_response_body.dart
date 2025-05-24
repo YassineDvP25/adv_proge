@@ -5,7 +5,7 @@ part 'login_response_body.g.dart';
 class LoginResponseBody {
   String? message;
   Data? data;
-  String? status;
+  bool? status;
   int? code;
 
   LoginResponseBody(this.message, this.data, this.status, this.code);

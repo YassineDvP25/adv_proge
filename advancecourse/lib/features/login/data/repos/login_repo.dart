@@ -12,8 +12,12 @@ class LoginRepo {
   ) async {
     try {
       final response = await _apiService.login(loginRequestBody);
+      print('=========================${response.data}=======================');
       return ApiResult.success(response);
+      
     } catch (error) {
+            print('=========================${error}=======================');
+
       return ApiResult.failure(ErrorHandler.handle(error));
     }
   }
