@@ -14,7 +14,7 @@ class PasswordValidation extends StatelessWidget {
     required this.hasUpperCase,
     required this.hasSpecialCharacters,
     required this.hasMinLength,
-    required this.hasNumber,
+    required this.hasNumber, required bool hasUppercase,
   });
 
   @override
@@ -42,7 +42,7 @@ class PasswordValidation extends StatelessWidget {
     );
   }
 
-  _buildValidationRow(String text, bool hasValidation) {
+  Widget  _buildValidationRow(String text, bool hasValidation) {
     return Row(
       children: [
         CircleAvatar(

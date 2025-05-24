@@ -13,5 +13,5 @@ Future<void> setUpGetIt() async {
 
   // login
   gitIt.registerLazySingleton<LoginRepo>(() => LoginRepo(gitIt()));
-  gitIt.registerLazySingleton<LoginCubit>(() => LoginCubit(gitIt()));
+  gitIt.registerFactory<LoginCubit>(() => LoginCubit(gitIt()));
 }

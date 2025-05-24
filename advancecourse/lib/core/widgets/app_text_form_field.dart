@@ -23,14 +23,16 @@ class AppTextFormField extends StatelessWidget {
     this.hintStyle,
     this.enableBorder,
     this.focusedBorder,
-    this.obscureText,
+    this.obscureText
   });
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
       validator: validator,
+      controller: contoller,
       decoration: InputDecoration(
+        
         
         focusedErrorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(16.0),
@@ -47,7 +49,7 @@ class AppTextFormField extends StatelessWidget {
 
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(15.0),
-          borderSide: BorderSide(color: Colors.red, width: 1.3),
+          borderSide: BorderSide(color: ColorsManager.mainBlue, width: 2.3),
         ),
         suffixIcon: suffixicon,
         hintText: hintText,
