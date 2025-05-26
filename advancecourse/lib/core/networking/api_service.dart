@@ -1,6 +1,8 @@
 import 'package:advancecourse/core/networking/api_constants.dart';
 import 'package:advancecourse/features/login/data/models/login_request_body.dart';
 import 'package:advancecourse/features/login/data/models/login_response_body.dart';
+import 'package:advancecourse/features/sign_up/data/models/sign_up_request_body.dart';
+import 'package:advancecourse/features/sign_up/data/models/sign_up_response_body.dart';
 import 'package:retrofit/error_logger.dart';
 import 'package:dio/dio.dart';
 import 'package:retrofit/http.dart';
@@ -10,15 +12,22 @@ part 'api_service.g.dart';
 abstract class ApiService {
   factory ApiService(Dio dio, {String baseUrl, ParseErrorLogger errorLogger}) =
       _ApiService;
+
+
+
+
+  //! Login
   @POST(ApiConstants.loginEndpoint)
   Future<LoginResponseBody> login(@Body() LoginRequestBody loginRequestBody);
+
+  //! Sign Up
+    @POST(ApiConstants.signUpEndpoint)
+  Future<SignUpResponseBody> signUp(@Body() SignUpRequestBody signUpRequestBody);
+     
 }
 
  
-// @POST(ApiConstants.loginEndpoint)
-// Future<LoginResponseBody> login(
-//   @Body() LoginResponseBody loginResponseBody,
-// );
+
   // @POST(ApiConstannts.registerEndpoint)
   // Future<RegisterResponse> register(@Body() RegisterRequest registerRequest);
 

@@ -30,7 +30,7 @@ class _EmailAndPaswordState extends State<EmailAndPasword> {
             hintText: 'Email',
             contoller: context.read<LoginCubit>().emailController,
           ),
-          verticalSpace(18),
+          verticalSpace(12),
           AppTextFormField(
             validator: (value) {
               if (value == null || value.isEmpty) {
