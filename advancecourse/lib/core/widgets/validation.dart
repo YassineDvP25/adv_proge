@@ -1,20 +1,21 @@
 import 'package:advancecourse/core/helpers/spacing.dart';
 import 'package:flutter/material.dart';
 
-class PasswordValidation extends StatelessWidget {
+class Validation extends StatelessWidget {
   final bool hasLowerCase;
   final bool hasUpperCase;
   final bool hasSpecialCharacters;
   final bool hasMinLength;
   final bool hasNumber;
 
-  const PasswordValidation({
+  const Validation({
     super.key,
     required this.hasLowerCase,
     required this.hasUpperCase,
     required this.hasSpecialCharacters,
     required this.hasMinLength,
-    required this.hasNumber, required bool hasUppercase,
+    required this.hasNumber,
+    required bool hasUppercase,
   });
 
   @override
@@ -42,7 +43,7 @@ class PasswordValidation extends StatelessWidget {
     );
   }
 
-  Widget  _buildValidationRow(String text, bool hasValidation) {
+  Widget _buildValidationRow(String text, bool hasValidation) {
     return Row(
       children: [
         CircleAvatar(

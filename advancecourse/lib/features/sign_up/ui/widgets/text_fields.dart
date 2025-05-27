@@ -12,6 +12,7 @@ class SignUpTextFields extends StatefulWidget {
 }
 
 class _SignUpTextFieldsState extends State<SignUpTextFields> {
+  bool isObscure = false;
   @override
   Widget build(BuildContext context) {
     return Form(
@@ -56,6 +57,19 @@ class _SignUpTextFieldsState extends State<SignUpTextFields> {
                 return 'Please Enter a valid password';
               }
             },
+            suffixicon: IconButton(
+              onPressed: () {
+                setState(() {
+                  isObscure = !isObscure;
+                });
+              },
+              icon:
+                  isObscure
+                      ? Icon(Icons.visibility_off)
+                      : Icon(Icons.visibility),
+            ),
+            obscureText: isObscure,
+            
           ),
           verticalSpace(12),
           AppTextFormField(

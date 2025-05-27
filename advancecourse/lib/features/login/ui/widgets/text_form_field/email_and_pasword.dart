@@ -12,7 +12,6 @@ class EmailAndPasword extends StatefulWidget {
 }
 
 class _EmailAndPaswordState extends State<EmailAndPasword> {
-  
   bool isObscure = true;
 
   @override
@@ -25,7 +24,7 @@ class _EmailAndPaswordState extends State<EmailAndPasword> {
             validator: (value) {
               if (value == null || value.isEmpty) {
                 return 'Please enter a valid email';
-              } 
+              }
             },
             hintText: 'Email',
             contoller: context.read<LoginCubit>().emailController,
@@ -57,6 +56,4 @@ class _EmailAndPaswordState extends State<EmailAndPasword> {
       ),
     );
   }
-
-  
 }
