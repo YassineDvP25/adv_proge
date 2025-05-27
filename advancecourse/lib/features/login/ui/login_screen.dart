@@ -11,6 +11,7 @@ import 'package:advancecourse/features/login/ui/widgets/terms_conditions_privacy
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:password_validator_package/password_validator_package.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -55,7 +56,7 @@ class LoginScreen extends StatelessWidget {
                       textStyle: TextStyles.font16blueSemibold,
                     ),
                     verticalSpace(40),
-                    TextInsideDivider(text: 'Or Sign in with ',),
+                    TextInsideDivider(text: 'Or Sign in with '),
                     verticalSpace(20),
                     LoginAlternative(),
                     verticalSpace(20),
