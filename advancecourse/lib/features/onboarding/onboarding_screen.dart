@@ -13,17 +13,17 @@ class OnboardingScreen extends StatelessWidget {
     return Scaffold(
       body:SafeArea(
         child: SingleChildScrollView(
-          padding: EdgeInsets.only(top: 40.h, bottom: 10.h),
+          padding: EdgeInsets.only(top: 50.h, bottom: 30.h),
           child: Column(
             children: [
               
               DocLogoAndName(),
-              SizedBox(height: 40.h),
+              SizedBox(height: 30.h),
         
               DocImageAndText(),
         
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 10.h, vertical: 12.h),
+                padding: EdgeInsets.symmetric(horizontal: 30.h),
                 child: Column(
                   children: [
                     Text(
@@ -32,7 +32,7 @@ class OnboardingScreen extends StatelessWidget {
                       textAlign: TextAlign.center,
                     ),
         
-                    SizedBox(height: 40.h),
+                    SizedBox(height: 30.h),
         
                     GetstartedButton(),
                   ],
