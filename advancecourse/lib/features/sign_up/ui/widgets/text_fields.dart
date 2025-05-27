@@ -69,7 +69,6 @@ class _SignUpTextFieldsState extends State<SignUpTextFields> {
                       : Icon(Icons.visibility),
             ),
             obscureText: isObscure,
-            
           ),
           verticalSpace(12),
           AppTextFormField(
@@ -81,6 +80,18 @@ class _SignUpTextFieldsState extends State<SignUpTextFields> {
                 return 'Please Enter a valid password confirmation';
               }
             },
+            suffixicon: IconButton(
+              onPressed: () {
+                setState(() {
+                  isObscure = !isObscure;
+                });
+              },
+              icon:
+                  isObscure
+                      ? Icon(Icons.visibility_off)
+                      : Icon(Icons.visibility),
+            ),
+            obscureText: isObscure,
           ),
         ],
       ),

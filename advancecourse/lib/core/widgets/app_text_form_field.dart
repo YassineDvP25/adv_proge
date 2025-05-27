@@ -1,5 +1,6 @@
 import 'package:advancecourse/core/theming/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AppTextFormField extends StatelessWidget {
   final EdgeInsetsGeometry? contentPadding;
@@ -38,8 +39,8 @@ class AppTextFormField extends StatelessWidget {
         ),
         isDense: true,
 
-        contentPadding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 14.0),
-        hintStyle: hintStyle ?? TextStyle(color: Colors.grey, fontSize: 14.0),
+        contentPadding: EdgeInsets.symmetric(horizontal: 20.0.w, vertical: 14.0.w),
+        hintStyle: hintStyle ?? TextStyle(color: Colors.grey, fontSize: 11.0.sp),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(16.0),
           borderSide: BorderSide(color: ColorsManager.mainGray, width: 0.8),
@@ -56,7 +57,7 @@ class AppTextFormField extends StatelessWidget {
       ),
       obscureText: obscureText ?? false,
 
-      style: TextStyle(color: Colors.black, fontSize: 16.0),
+      style: TextStyle(color: Colors.black, fontSize: 13.0.sp),
     );
   }
 }

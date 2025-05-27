@@ -27,7 +27,7 @@ class SignUpScreen extends StatelessWidget {
                 Text('Welcom Back', style: TextStyles.font24blueBold),
                 verticalSpace(10),
                 Text(
-                  "Sign up now and start exploring all that our app has to offer. We're excited to welcome you to our community!",
+                  "Sign up now and start exploring all that our app has to offer. We're excited to welcome you to our\ncommunity!",
                   style: TextStyles.font14bodyRegular,
                   textAlign: TextAlign.start,
                 ),
