@@ -11,8 +11,11 @@ class DocApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) { 
+    final size = MediaQuery.of(context).size;
+    final deviceHeight = size.height;
+    final deviceWidth = size.width;
     return ScreenUtilInit(
-      designSize: Size(375, 812),
+      designSize: Size(deviceWidth, deviceHeight),
       minTextAdapt: true,
 
       child: MaterialApp(

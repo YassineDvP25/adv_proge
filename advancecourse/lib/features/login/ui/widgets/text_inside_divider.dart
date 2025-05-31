@@ -15,7 +15,7 @@ class TextInsideDivider extends StatelessWidget {
         Expanded(
           child: Divider(
             color: ColorsManager.mainGray,
-            thickness: 0.5,
+            thickness: 0.5.h,
             endIndent: 4.w,
             indent: 4.w,
           ),
@@ -27,7 +27,7 @@ class TextInsideDivider extends StatelessWidget {
         Expanded(
           child: Divider(
             color: ColorsManager.mainGray,
-            thickness: 0.5,
+            thickness: 0.5.h,
             endIndent: 4.w,
             indent: 4.w,
           ),
