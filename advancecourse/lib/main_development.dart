@@ -9,3 +9,4 @@ void main() {
   setUpGetIt();
   runApp(DocApp(approuter: AppRouter()));
 }
+
