@@ -1,3 +1,5 @@
+import 'package:advancecourse/core/helpers/spacing.dart';
+import 'package:advancecourse/features/home/ui/widgets/doctorsbluecontainer.dart';
 import 'package:advancecourse/features/home/ui/widgets/home_top_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -15,6 +17,7 @@ class HomeScreen extends StatelessWidget {
           child: Column(
           children: [
             HomeTopBar()
+,            Doctorsbluecontainer()
           ],
           
           ),

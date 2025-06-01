@@ -98,4 +98,16 @@ class TextStyles {
     fontFamily: 'Inter',
     fontWeight: FontWeightHelper.regular,
   );
+    static TextStyle font18WhiteMedium = TextStyle(
+    color: Colors.white,
+    fontSize: 18.sp,
+    fontFamily: 'Inter',
+    fontWeight: FontWeightHelper.medium,
+  );
+  static TextStyle font16BlueSemibold = TextStyle(
+    color: ColorsManager.mainBlue,
+    fontSize: 14.sp,
+    fontFamily: 'Inter',
+    fontWeight: FontWeightHelper.semibold,
+  );
 }
