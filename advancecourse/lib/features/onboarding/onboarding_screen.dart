@@ -24,6 +24,7 @@ class OnboardingScreen extends StatelessWidget {
 
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 20.w),
+
                 child: Column(
                   children: [
                     Text(
@@ -33,6 +34,8 @@ class OnboardingScreen extends StatelessWidget {
                     ),
 
                     verticalSpace(30),
+        
+        
                     GetstartedButton(),
                   ],
                 ),
