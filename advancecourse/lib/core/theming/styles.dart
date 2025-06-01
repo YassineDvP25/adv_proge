@@ -8,7 +8,7 @@ class TextStyles {
     fontSize: 32.sp,
     fontWeight: FontWeightHelper.bold,
     color: Colors.black,
-    fontFamily: 'FjallaOne',
+    fontFamily: 'Inter',
   );
   static TextStyle font32BlueBold = TextStyle(
     fontSize: 38.sp,
@@ -85,5 +85,17 @@ class TextStyles {
     fontSize: 14.sp,
     fontFamily: 'Inter',
     fontWeight: FontWeightHelper.semibold,
+  );
+    static TextStyle font18DarkBold = TextStyle(
+    color: Colors.black,
+    fontSize: 20.sp,
+    fontFamily: 'PlayfairDisplay',
+    fontWeight: FontWeightHelper.bold,
+  );
+    static TextStyle font12GrayRegular = TextStyle(
+    color: ColorsManager.gray,
+    fontSize: 12.sp,
+    fontFamily: 'Inter',
+    fontWeight: FontWeightHelper.regular,
   );
 }

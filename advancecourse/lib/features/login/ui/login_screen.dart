@@ -11,7 +11,6 @@ import 'package:advancecourse/features/login/ui/widgets/terms_conditions_privacy
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:password_validator_package/password_validator_package.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
