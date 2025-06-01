@@ -1,9 +1,13 @@
+import 'package:advancecourse/core/di/dependency_injection.dart';
 import 'package:advancecourse/core/routing/routes.dart';
 import 'package:advancecourse/features/home/ui/home_screen.dart';
+import 'package:advancecourse/features/login/logic_cubit/cubit/login_cubit.dart';
 import 'package:advancecourse/features/login/ui/login_screen.dart';
 import 'package:advancecourse/features/onboarding/onboarding_screen.dart';
+import 'package:advancecourse/features/sign_up/logic/cubit/cubit/sign_up_cubit.dart';
 import 'package:advancecourse/features/sign_up/ui/signup_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class AppRouter {
   Route? generateRoute(RouteSettings settings) {
@@ -12,21 +16,25 @@ class AppRouter {
 
     switch (settings.name) {
       case Routes.onBoardingScreen:
-        return MaterialPageRoute(
-          builder: (_) => const OnboardingScreen(),
-        );
+        return MaterialPageRoute(builder: (_) => const OnboardingScreen());
       case Routes.loginScreen:
         return MaterialPageRoute(
-          builder: (_) => const LoginScreen()
+          builder:
+              (_) => BlocProvider(
+                create: (context) => gitIt<LoginCubit>(),
+                child: LoginScreen(),
+              ),
         );
       case Routes.signUpScreen:
         return MaterialPageRoute(
-          builder: (_) => const SignupScreen()
+          builder:
+              (_) => BlocProvider(
+                create: (context) => gitIt<SignUpCubit>(),
+                child: const SignUpScreen(),
+              ),
         );
       case Routes.homeScreen:
-        return MaterialPageRoute(
-          builder: (_) => const HomeScreen()
-        );
+        return MaterialPageRoute(builder: (_) => const HomeScreen());
       default:
         return null;
     }
