@@ -34,7 +34,7 @@ class TextStyles {
     color: ColorsManager.mainGray,
     fontFamily: 'Inter',
   );
-  static TextStyle font12blueRegular = TextStyle(
+  static TextStyle font12BlueRegular = TextStyle(
     fontSize: 12.sp,
     fontWeight: FontWeightHelper.regular,
     color: ColorsManager.mainBlue,
@@ -67,7 +67,6 @@ class TextStyles {
     height: 1.50,
   );
   static TextStyle font12RegularGray = TextStyle(
-
     color: ColorsManager.moreGray,
     fontSize: 12.sp,
     fontFamily: 'Inter',
@@ -80,12 +79,50 @@ class TextStyles {
     fontFamily: 'Inter',
     fontWeight: FontWeightHelper.medium,
   );
-    static TextStyle font14BlueSemiBold = TextStyle(
+  static TextStyle font14BlueSemiBold = TextStyle(
     color: ColorsManager.mainBlue,
     fontSize: 14.sp,
     fontFamily: 'Inter',
     fontWeight: FontWeightHelper.semibold,
   );
+  static TextStyle font18DarkBold = TextStyle(
+    color: Colors.black,
+    fontSize: 20.sp,
+    fontFamily: 'PlayfairDisplay',
+    fontWeight: FontWeightHelper.bold,
+  );
+  static TextStyle font12GrayRegular = TextStyle(
+    color: ColorsManager.gray,
+    fontSize: 12.sp,
+    fontFamily: 'Inter',
+    fontWeight: FontWeightHelper.regular,
+  );
+  static TextStyle font18WhiteMedium = TextStyle(
+    color: Colors.white,
+    fontSize: 18.sp,
+    fontFamily: 'Inter',
+    fontWeight: FontWeightHelper.medium,
+  );
+  static TextStyle font16BlueSemibold = TextStyle(
+    color: ColorsManager.mainBlue,
+    fontSize: 14.sp,
+    fontFamily: 'Inter',
+    fontWeight: FontWeightHelper.semibold,
+  );
+  static TextStyle font18DarkSemibold = TextStyle(
+    fontSize: 18.sp,
+    fontWeight: FontWeightHelper.semibold,
+    fontFamily: 'Inter',
+    color: ColorsManager.dark,
+  );
+  static TextStyle font12DarkRegular =  TextStyle(
+            fontSize: 12.sp,
+            color: ColorsManager.dark,
+            fontWeight: FontWeightHelper.regular,
+            fontFamily: 'Inter',
+  );
+          
+=======
     static TextStyle font18DarkBold = TextStyle(
     color: Colors.black,
     fontSize: 20.sp,
