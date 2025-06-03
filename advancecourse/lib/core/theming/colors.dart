@@ -8,5 +8,6 @@ class ColorsManager {
   static const morLighterGray = Color(0xFFEDEDED);
   static const gray = Color(0xFF616161);
   static const dark = Color(0xFF242424);
+  static const lightBlue = Color(0xFFF4F8FF);
 }
  
