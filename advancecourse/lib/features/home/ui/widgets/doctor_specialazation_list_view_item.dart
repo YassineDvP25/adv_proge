@@ -33,6 +33,8 @@ class DoctorSpecialazationListViewItem extends StatelessWidget {
               width: 30.w,
               height: 30.h,
               fit: BoxFit.cover,
+
+              
             ),
           ),
           verticalSpace(10),
