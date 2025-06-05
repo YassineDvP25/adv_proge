@@ -1,5 +1,8 @@
 import 'package:advancecourse/core/networking/api_factory.dart';
 import 'package:advancecourse/core/networking/api_service.dart';
+import 'package:advancecourse/features/home/data/apis/home_apis_service.dart';
+import 'package:advancecourse/features/home/data/repos/home_repo.dart';
+import 'package:advancecourse/features/home/logic/cubit/home_cubit.a.dart';
 import 'package:advancecourse/features/login/data/repos/login_repo.dart';
 import 'package:advancecourse/features/login/logic_cubit/cubit/login_cubit.dart';
 import 'package:advancecourse/features/sign_up/data/repos/sign_up_repo.dart';
@@ -20,4 +23,7 @@ Future<void> setUpGetIt() async {
   //! Sign Up
   gitIt.registerLazySingleton<SignUpRepo>(() => SignUpRepo(gitIt()));
   gitIt.registerFactory<SignUpCubit>(() => SignUpCubit(gitIt()));
+
+  gitIt.registerLazySingleton<HomeApisService>(() => HomeApisService(dio));
+  gitIt.registerLazySingleton<HomeRepo>(() => HomeRepo( gitIt()));
 }

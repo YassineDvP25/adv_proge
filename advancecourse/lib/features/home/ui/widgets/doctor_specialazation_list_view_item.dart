@@ -1,0 +1,47 @@
+import 'package:advancecourse/core/helpers/doctors_speciality.dart';
+import 'package:advancecourse/core/helpers/spacing.dart';
+import 'package:advancecourse/core/theming/colors.dart';
+import 'package:advancecourse/core/theming/styles.dart';
+import 'package:advancecourse/features/home/data/models/specialization_response_model.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class DoctorSpecialazationListViewItem extends StatelessWidget {
+  final int index;
+  final SpecializationsData? specializationsListData;
+  const DoctorSpecialazationListViewItem({
+    super.key,
+    required this.index,
+    this.specializationsListData,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    DoctorsSpecialityPhotos doctorsSpeciality = DoctorsSpecialityPhotos();
+
+    return Padding(
+      padding: EdgeInsetsDirectional.only(start: index == 0 ? 0.0 : 19.0.w),
+      child: Column(
+        children: [
+          CircleAvatar(
+            radius: 25.r,
+            backgroundColor: ColorsManager.lightBlue,
+            child: Image.asset(
+              doctorsSpeciality.getSpecialityPhoto(
+                index,
+              ), // Assuming you have 10 speciality images
+              width: 30.w,
+              height: 30.h,
+              fit: BoxFit.cover,
+            ),
+          ),
+          verticalSpace(10),
+          Text(
+            specializationsListData!.name ?? 'speciality',
+            style: TextStyles.font12DarkRegular,
+          ),
+        ],
+      ),
+    );
+  }
+}

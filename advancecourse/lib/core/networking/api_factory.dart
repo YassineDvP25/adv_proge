@@ -16,11 +16,19 @@ class DioFactory {
       dio!
         ..options.connectTimeout = timeOut
         ..options.receiveTimeout = timeOut;
+        addDioHeader();
       addDioInterceptor();
       return dio!;
     } else {
       return dio!;
     }
+  }
+  static void addDioHeader() {
+    dio?.options.headers.addAll({
+      
+      'Accept': 'application/json',
+      'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3ZjYXJlLmludGVncmF0aW9uMjUuY29tL2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNzQ5MTI0NTUxLCJleHAiOjE3NDkyMTA5NTEsIm5iZiI6MTc0OTEyNDU1MSwianRpIjoiS2RhcFhWQ3pXNXNTVlFQbCIsInN1YiI6IjQwMzIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.tRKLWoyujR0UhUev8HXLCYaeD32qNQENTzKo1upl5Nc',
+    });
   }
 
 
