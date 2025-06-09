@@ -1,6 +1,7 @@
 import 'package:advancecourse/core/routing/app_router.dart';
 import 'package:advancecourse/core/routing/routes.dart';
 import 'package:advancecourse/core/theming/colors.dart';
+import 'package:advancecourse/features/onboarding/onboarding_screen.dart';
 import 'package:advancecourse/features/home/ui/home_screen.dart';
   import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -20,6 +21,8 @@ class DocApp extends StatelessWidget {
           primaryColor: ColorsManager.mainBlue,
           scaffoldBackgroundColor: Colors.white,
         ),
+        home: OnboardingScreen(),
+        initialRoute: Routes.onBoardingScreen,
         home: HomeScreen(),
         initialRoute: Routes.homeScreen,
         debugShowCheckedModeBanner: false,

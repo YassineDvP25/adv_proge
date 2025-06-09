@@ -80,18 +80,21 @@ class TextStyles {
     fontWeight: FontWeightHelper.medium,
   );
   static TextStyle font14BlueSemiBold = TextStyle(
+    static TextStyle font14BlueSemiBold = TextStyle(
     color: ColorsManager.mainBlue,
     fontSize: 14.sp,
     fontFamily: 'Inter',
     fontWeight: FontWeightHelper.semibold,
   );
   static TextStyle font18DarkBold = TextStyle(
+    static TextStyle font18DarkBold = TextStyle(
     color: Colors.black,
     fontSize: 20.sp,
     fontFamily: 'PlayfairDisplay',
     fontWeight: FontWeightHelper.bold,
   );
   static TextStyle font12GrayRegular = TextStyle(
+    static TextStyle font12GrayRegular = TextStyle(
     color: ColorsManager.gray,
     fontSize: 12.sp,
     fontFamily: 'Inter',
@@ -121,8 +124,23 @@ class TextStyles {
             fontWeight: FontWeightHelper.regular,
             fontFamily: 'Inter',
   );
+  static TextStyle font16BlackBold = TextStyle(
+    fontSize: 16.sp,
+    fontWeight: FontWeightHelper.bold,
+    color: Colors.black,
+    fontFamily: 'PlayfairDisplay',
+  );
+  static TextStyle font12BlackSemiBold = TextStyle(
+    fontSize: 8.sp,
+    fontWeight: FontWeightHelper.regular,
+    color: Colors.black,
+    fontFamily: 'Inter',
+    
+  );
           
-=======
+  
+
+          
     static TextStyle font18DarkBold = TextStyle(
     color: Colors.black,
     fontSize: 20.sp,

@@ -44,6 +44,7 @@ class LoginScreen extends StatelessWidget {
                       child: Text(
                         'Forgot Password ?',
                         style: TextStyles.font12BlueRegular,
+                        style: TextStyles.font12blueRegular,
                       ),
                     ),
                     verticalSpace(40),

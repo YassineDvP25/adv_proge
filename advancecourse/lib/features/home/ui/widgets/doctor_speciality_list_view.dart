@@ -1,3 +1,6 @@
+
+import 'package:advancecourse/features/home/data/models/specialization_response_model.dart';
+import 'package:advancecourse/features/home/ui/widgets/doctor_specialazation_list_view_item.dart';
 import 'package:advancecourse/core/helpers/spacing.dart';
 import 'package:advancecourse/core/theming/colors.dart';
 import 'package:advancecourse/core/theming/styles.dart';
@@ -6,6 +9,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class DoctorSpecialityListView extends StatelessWidget {
+final  List<SpecializationsData?>  specializationsListData;
+  const DoctorSpecialityListView({
+    super.key,
+    required this.specializationsListData,
+  });
   const DoctorSpecialityListView({super.key});
 
   @override
@@ -14,6 +22,13 @@ class DoctorSpecialityListView extends StatelessWidget {
       height: 80.h,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
+        itemCount: specializationsListData.length,
+        shrinkWrap: true,
+
+        itemBuilder: (context, index) {
+          return DoctorSpecialazationListViewItem(
+            index: index,
+            specializationsListData: specializationsListData[index],
         itemCount: 8,
         shrinkWrap: true,
 
@@ -36,6 +51,7 @@ class DoctorSpecialityListView extends StatelessWidget {
                 Text('Speciality ', style: TextStyles.font12DarkRegular),
               ],
             ),
+ 
           );
         },
       ),
