@@ -24,6 +24,7 @@ Future<void> setUpGetIt() async {
   gitIt.registerLazySingleton<SignUpRepo>(() => SignUpRepo(gitIt()));
   gitIt.registerFactory<SignUpCubit>(() => SignUpCubit(gitIt()));
 
+  //! Home
   gitIt.registerLazySingleton<HomeApisService>(() => HomeApisService(dio));
-  gitIt.registerLazySingleton<HomeRepo>(() => HomeRepo( gitIt()));
+  gitIt.registerLazySingleton<HomeRepo>(() => HomeRepo(gitIt()));
 }

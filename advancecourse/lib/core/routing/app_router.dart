@@ -42,6 +42,7 @@ class AppRouter {
                 child: HomeScreen(),
               ),
         );
+        return MaterialPageRoute(builder: (_) => const HomeScreen());
       default:
         return null;
     }

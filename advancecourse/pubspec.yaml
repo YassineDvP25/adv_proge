@@ -42,6 +42,11 @@ dependencies:
 
   freezed_annotation: ^2.4.1
   #!dependency injection
+  #Code generetor (mainly used with cubit & retrofit)
+  freezed: ^2.4.1
+
+  freezed_annotation: ^2.4.1
+  #dependency injection
   get_it: ^8.0.3
   #!Automatically generate code for converting to and from JSON by annotating dart
   json_serializable: ^6.9.5
