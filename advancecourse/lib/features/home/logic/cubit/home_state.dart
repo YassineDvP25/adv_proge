@@ -13,6 +13,7 @@ class HomeState with _$HomeState {
   const factory HomeState.specialazationSuccess(
     SpecializationsResponseModel specializationsResponseModel
   ) = SpecialazationSuccess;
+  
 
   const factory HomeState.specialazationError(ErrorHandler errorHandleer) =
       SpecialazationError;

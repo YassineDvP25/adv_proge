@@ -121,18 +121,19 @@ class TextStyles {
             fontWeight: FontWeightHelper.regular,
             fontFamily: 'Inter',
   );
-          
-=======
-    static TextStyle font18DarkBold = TextStyle(
-    color: Colors.black,
-    fontSize: 20.sp,
-    fontFamily: 'PlayfairDisplay',
+  static TextStyle font16BlackBold = TextStyle(
+    fontSize: 16.sp,
     fontWeight: FontWeightHelper.bold,
+    color: Colors.black,
+    fontFamily: 'PlayfairDisplay',
   );
-    static TextStyle font12GrayRegular = TextStyle(
-    color: ColorsManager.gray,
-    fontSize: 12.sp,
-    fontFamily: 'Inter',
+  static TextStyle font12BlackSemiBold = TextStyle(
+    fontSize: 8.sp,
     fontWeight: FontWeightHelper.regular,
+    color: Colors.black,
+    fontFamily: 'Inter',
+    
   );
+          
+  
 }

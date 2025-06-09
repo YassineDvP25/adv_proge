@@ -1,5 +1,6 @@
 import 'package:advancecourse/core/helpers/doctors_photos.dart';
 import 'package:advancecourse/core/helpers/spacing.dart';
+import 'package:advancecourse/core/theming/styles.dart';
 import 'package:advancecourse/features/home/data/models/specialization_response_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -10,7 +11,8 @@ class DoctorsListViewItem extends StatelessWidget {
 
   const DoctorsListViewItem({
     super.key,
-    required this.doctorsModel, required this.index,
+    required this.doctorsModel,
+    required this.index,
   });
 
   @override
@@ -23,7 +25,7 @@ class DoctorsListViewItem extends StatelessWidget {
           ClipRRect(
             borderRadius: BorderRadius.circular(20.r),
             child: Image.asset(
-            docPhotos.getPhoto(index)  , // Assuming you have 5 doctor images
+              docPhotos.getPhoto(index), // Assuming you have 5 doctor images
               width: 100.w,
               height: 100.h,
               fit: BoxFit.cover,
@@ -36,11 +38,32 @@ class DoctorsListViewItem extends StatelessWidget {
               children: [
                 Text(
                   doctorsModel.name ?? "Doctor",
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                  style: TextStyles.font16BlackBold,
                 ),
+                verticalSpace(5),
+                Text(
+                  doctorsModel.phone ?? "phone not available",
+                  style: TextStyles.font12BlackSemiBold,
+                ),
+                                verticalSpace(5),
+
                 Text(
                   doctorsModel.email ?? "Email not available",
-                  style: TextStyle(fontSize: 14, color: Colors.grey),
+                  style: TextStyles.font12BlackSemiBold,
+                ),
+                                verticalSpace(5),
+
+                Row(
+                  children: [
+                    Icon(Icons.star, color: Colors.yellow, size: 16),
+                    horizantalSpace(5),
+                    Text(
+                      '4.8',
+                      style: TextStyle(fontSize: 14, color: Colors.grey),
+                    ),
+                    horizantalSpace(2),
+                    Text('(4.894 reviews)',style: TextStyle(fontSize: 14, color: Colors.grey),),
+                  ],
                 ),
               ],
             ),

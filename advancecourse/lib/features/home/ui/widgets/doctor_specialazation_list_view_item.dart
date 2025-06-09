@@ -25,7 +25,7 @@ class DoctorSpecialazationListViewItem extends StatelessWidget {
         children: [
           CircleAvatar(
             radius: 25.r,
-            backgroundColor: ColorsManager.lightBlue,
+            backgroundColor: ColorsManager.morLighterGray,
             child: Image.asset(
               doctorsSpeciality.getSpecialityPhoto(
                 index,
