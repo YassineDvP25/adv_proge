@@ -21,6 +21,7 @@ class HomeTopBar extends StatelessWidget {
         Spacer(),
 
         CircleAvatar(
+          radius: 16.r,
           radius: 19.r,
           backgroundColor: ColorsManager.morLighterGray,
           child: SvgPicture.asset(
