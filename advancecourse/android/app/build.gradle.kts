@@ -8,7 +8,7 @@ plugins {
 android {
     namespace = "com.example.advancecourse"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    ndkVersion = "27.0.12077973"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -30,6 +30,25 @@ android {
         versionName = flutter.versionName
     }
 
+     flavorDimensions += "default"
+    productFlavors {
+        create("development") {
+            dimension = "default"
+            resValue(
+                type = "string",
+                name = "app_name",
+                value = "DocDoc Development")
+            applicationIdSuffix = ".development"
+        }
+        create("production") {
+            dimension = "default"
+            resValue(
+                type = "string",
+                name = "app_name",
+                value = "DocDoc production")
+            applicationIdSuffix = ".production"
+        }
+
     buildTypes {
         release {
             // TODO: Add your own signing config for the release build.
@@ -41,4 +60,5 @@ android {
 
 flutter {
     source = "../.."
+}
 }
