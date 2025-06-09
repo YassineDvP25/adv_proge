@@ -140,4 +140,17 @@ class TextStyles {
           
   
 
+          
+    static TextStyle font18DarkBold = TextStyle(
+    color: Colors.black,
+    fontSize: 20.sp,
+    fontFamily: 'PlayfairDisplay',
+    fontWeight: FontWeightHelper.bold,
+  );
+    static TextStyle font12GrayRegular = TextStyle(
+    color: ColorsManager.gray,
+    fontSize: 12.sp,
+    fontFamily: 'Inter',
+    fontWeight: FontWeightHelper.regular,
+  );
 }
