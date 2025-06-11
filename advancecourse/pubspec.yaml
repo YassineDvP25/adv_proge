@@ -63,6 +63,7 @@ dependencies:
   flutter_bloc: ^9.1.1
   password_validator_package: ^0.0.1
   shared_preferences: ^2.5.3
+  flutter_secure_storage: ^4.2.1
 
 
 
