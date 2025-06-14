@@ -19,6 +19,7 @@ class DioFactory {
         ..options.receiveTimeout = timeOut;
       addDioHeader();
       addDioInterceptor();
+
       return dio!;
     } else {
       return dio!;
@@ -29,8 +30,12 @@ class DioFactory {
     dio?.options.headers.addAll({
       'Accept': 'application/json',
       'Authorization':
-          'Bearer ${await SharedPrefHelper.getString(SharedPrefKeys.userToken)}',
+          'Bearer ${await SharedPrefHelper.getSecuredString(SharedPrefKeys.userToken)}',
     });
+  }
+
+  static void addDioHeaderAfterLogin(String token) {
+    dio?.options.headers.addAll({'Authorization': 'Bearer $token'});
   }
 
   static void addDioInterceptor() {
@@ -41,9 +46,5 @@ class DioFactory {
         responseHeader: true,
       ),
     );
-  }
-
-  static void addDioHeaderAfterLogin(String token) {
-    dio?.options.headers.addAll({'Authorization': 'Bearer $token'});
   }
 }

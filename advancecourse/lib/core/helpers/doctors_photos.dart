@@ -1,5 +1,5 @@
 class ListDoctorsPhotos {
-  final List<String> doctorsPhotos = [
+   List<String> doctorsPhotos = [
     'assets/images/doctors/doc1.PNG',
     'assets/images/doctors/doc2.PNG',
     'assets/images/doctors/doc3.png',
@@ -15,7 +15,7 @@ class ListDoctorsPhotos {
 
   String getPhoto(int index) {
     if (index < 0 || index >= doctorsPhotos.length) {
-      return 'assets/images/doctors/doc3.png'; // Default image if index is out of range
+      return doctorsPhotos[2]; // Default image if index is out of range
     }
     return doctorsPhotos[index];
   }

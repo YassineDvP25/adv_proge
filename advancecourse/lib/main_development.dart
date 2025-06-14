@@ -6,10 +6,11 @@ import 'package:advancecourse/core/routing/app_router.dart';
 import 'package:advancecourse/doc_app.dart';
 import 'package:flutter/widgets.dart';
 
-void main() {
+void main() async{
   WidgetsFlutterBinding.ensureInitialized();
-  checkIfLoggedInUser();
   setUpGetIt();
+   await  checkIfLoggedInUser();
+
   runApp(DocApp(approuter: AppRouter()));
 }
 

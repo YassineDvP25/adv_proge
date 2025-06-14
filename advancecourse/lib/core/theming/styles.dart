@@ -34,6 +34,12 @@ class TextStyles {
     color: ColorsManager.mainGray,
     fontFamily: 'Inter',
   );
+  static TextStyle font10bodyRegular = TextStyle(
+    fontSize: 10.sp,
+    fontWeight: FontWeightHelper.regular,
+    color: ColorsManager.mainGray,
+    fontFamily: 'Inter',
+  );
   static TextStyle font12BlueRegular = TextStyle(
     fontSize: 12.sp,
     fontWeight: FontWeightHelper.regular,
@@ -115,10 +121,16 @@ class TextStyles {
     fontFamily: 'Inter',
     color: ColorsManager.dark,
   );
-  static TextStyle font12DarkRegular =  TextStyle(
-            fontSize: 12.sp,
+  static TextStyle font10DarkRegular =  TextStyle(
+            fontSize: 10.sp,
             color: ColorsManager.dark,
             fontWeight: FontWeightHelper.regular,
+            fontFamily: 'Inter',
+  );
+  static TextStyle font13DarkBold =  TextStyle(
+            fontSize: 13.sp,
+            color: ColorsManager.mainBlue,
+            fontWeight: FontWeightHelper.bold,
             fontFamily: 'Inter',
   );
   static TextStyle font16BlackBold = TextStyle(
@@ -133,6 +145,27 @@ class TextStyles {
     color: Colors.black,
     fontFamily: 'Inter',
     
+  );
+
+  static TextStyle font14Black = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeightHelper.regular,
+    color: Colors.black,
+    fontFamily: 'Inter',
+  );
+
+
+  static TextStyle font12DarkGreyRegular = TextStyle(
+    fontSize: 9.sp,
+    fontWeight: FontWeightHelper.regular,
+    color: ColorsManager.gray,
+    fontFamily: 'Inter',
+  );
+  static TextStyle font12GreyRegular = TextStyle(
+    fontSize: 8.sp,
+    fontWeight: FontWeightHelper.regular,
+    color: ColorsManager.gray,
+    fontFamily: 'Inter',
   );
           
   

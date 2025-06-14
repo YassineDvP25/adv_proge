@@ -8,11 +8,13 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class DoctorSpecialazationListViewItem extends StatelessWidget {
   final int index;
+  final int selectedIndex;
   final SpecializationsData? specializationsListData;
   const DoctorSpecialazationListViewItem({
     super.key,
     required this.index,
     this.specializationsListData,
+    required this.selectedIndex,
   });
 
   @override
@@ -23,24 +25,47 @@ class DoctorSpecialazationListViewItem extends StatelessWidget {
       padding: EdgeInsetsDirectional.only(start: index == 0 ? 0.0 : 19.0.w),
       child: Column(
         children: [
-          CircleAvatar(
-            radius: 25.r,
-            backgroundColor: ColorsManager.morLighterGray,
-            child: Image.asset(
-              doctorsSpeciality.getSpecialityPhoto(
-                index,
-              ), // Assuming you have 10 speciality images
-              width: 30.w,
-              height: 30.h,
-              fit: BoxFit.cover,
+          selectedIndex == index
+              ? Container(
+                decoration: BoxDecoration(
+                  border: Border.all(  
+                    width: 2.w,                color: ColorsManager.mainBlue,
+),
+                  shape: BoxShape.circle,
+                ),
+                child: CircleAvatar(
+                  radius: 27.r,
+                  backgroundColor: ColorsManager.morLighterGray,
+                  child: Image.asset(
+                    doctorsSpeciality.getSpecialityPhoto(
+                      index,
+                    ), // Assuming you have 10 speciality images
+                    width: 30.w,
+                    height: 30.h,
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              )
+              : CircleAvatar(
+                radius: 23.r,
+                backgroundColor: ColorsManager.morLighterGray,
+                child: Image.asset(
+                  doctorsSpeciality.getSpecialityPhoto(
+                    index,
+                  ), // Assuming you have 10 speciality images
+                  width: 30.w,
+                  height: 30.h,
+                  fit: BoxFit.cover,
+                ),
+              ),
 
-              
-            ),
-          ),
-          verticalSpace(10),
+          verticalSpace(8),
           Text(
             specializationsListData!.name ?? 'speciality',
-            style: TextStyles.font12DarkRegular,
+            style:
+                selectedIndex == index
+                    ? TextStyles.font13DarkBold
+                    : TextStyles.font10DarkRegular,
           ),
         ],
       ),

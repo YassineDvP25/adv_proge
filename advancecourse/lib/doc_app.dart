@@ -1,8 +1,7 @@
+import 'package:advancecourse/core/helpers/constants.dart';
 import 'package:advancecourse/core/routing/app_router.dart';
 import 'package:advancecourse/core/routing/routes.dart';
 import 'package:advancecourse/core/theming/colors.dart';
-import 'package:advancecourse/features/onboarding/onboarding_screen.dart';
-import 'package:advancecourse/main_development.dart';
   import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
