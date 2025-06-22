@@ -15,19 +15,22 @@ class DoctorsShimmerLoading extends StatelessWidget {
         itemCount: 10,
         itemBuilder: (context, index) {
           return Container(
+            padding: 
+          EdgeInsets.symmetric(horizontal: 10.w),
             margin: EdgeInsets.only(bottom: 16.h),
             child: Row(
               children: [
-                Shimmer.fromColors(
-                  baseColor: ColorsManager.lightGray,
-                  highlightColor: Colors.white,
+                Shimmer(
+                  direction: ShimmerDirection.fromLeftToRight(),
+                  
+
                   child: Container(
-                    width: 110.w,
-                    height: 120.h,
+                    width: 90.w,
+                    height: 90.h,
                     decoration: BoxDecoration(
                       shape: BoxShape.rectangle,
-                      borderRadius: BorderRadius.circular(12.0),
-                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(18.0),
+                      color: ColorsManager.lightGray,
                     ),
                   ),
                 ),
@@ -36,9 +39,8 @@ class DoctorsShimmerLoading extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Shimmer.fromColors(
-                        baseColor: ColorsManager.lightGray,
-                        highlightColor: Colors.white,
+                      Shimmer(
+
                         child: Container(
                           height: 18.h,
                           width: 180.w,
@@ -49,9 +51,9 @@ class DoctorsShimmerLoading extends StatelessWidget {
                         ),
                       ),
                       verticalSpace(12),
-                      Shimmer.fromColors(
-                        baseColor: ColorsManager.lightGray,
-                        highlightColor: Colors.white,
+                      Shimmer(
+
+
                         child: Container(
                           height: 14.h,
                           width: 160.w,
@@ -62,9 +64,9 @@ class DoctorsShimmerLoading extends StatelessWidget {
                         ),
                       ),
                       verticalSpace(12),
-                      Shimmer.fromColors(
-                        baseColor: ColorsManager.lightGray,
-                        highlightColor: Colors.white,
+                      Shimmer(
+
+
                         child: Container(
                           height: 14.h,
                           width: 160.w,

@@ -1,8 +1,7 @@
-import 'dart:math';
 
 import 'package:advancecourse/core/helpers/doctors_photos.dart';
 import 'package:advancecourse/core/helpers/extentions.dart';
-import 'package:advancecourse/core/networking/api_error_handler.dart';
+import 'package:advancecourse/core/networking/api_error_model.dart';
 import 'package:advancecourse/features/home/data/models/specialization_response_model.dart';
 import 'package:advancecourse/features/home/data/repos/home_repo.dart';
 import 'package:advancecourse/features/home/logic/cubit/home_state.dart';
@@ -24,8 +23,8 @@ class HomeCubit extends Cubit<HomeState> {
         getDoctorList(specialazationId: specializationDataList!.first!.id);
         emit(HomeState.specialazationSuccess(specializationDataList));
       },
-      failure: (error) {
-        emit(HomeState.specialazationError(error));
+      failure: (ApiErrorModel apiErrorModel) {
+        emit(HomeState.specialazationError(apiErrorModel));
       },
     );
   }
@@ -38,11 +37,7 @@ class HomeCubit extends Cubit<HomeState> {
     if (!doctorsListfiltring.isNullOrEmpty()) {
       emit(HomeState.doctorSuccess(doctorsListfiltring));
     } else {
-      emit(
-        HomeState.specialazationError(
-          ErrorHandler.handle('No doctors found !!'),
-        ),
-      );
+    
     }
   }
 

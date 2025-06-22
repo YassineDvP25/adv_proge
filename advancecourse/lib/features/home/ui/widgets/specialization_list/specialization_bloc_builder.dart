@@ -1,6 +1,9 @@
+import 'package:advancecourse/core/helpers/spacing.dart';
 import 'package:advancecourse/features/home/logic/cubit/home_cubit.a.dart';
 import 'package:advancecourse/features/home/logic/cubit/home_state.dart';
 import 'package:advancecourse/features/home/ui/widgets/doctor_speciality_list_view.dart';
+import 'package:advancecourse/features/home/ui/widgets/doctors_shimmer_loading.dart';
+import 'package:advancecourse/features/home/ui/widgets/specialization_shimmer_loading.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -18,9 +21,7 @@ class SpecializationBlocBuilder extends StatelessWidget {
       builder: (context, state) {
         return state.maybeWhen(
           specialazationLoading:
-              () => Column(
-                children: [Center(child: CircularProgressIndicator())],
-              ),
+              () => setupLoading(),
 
           specialazationSuccess: (specializationDataList) {
             var specialazationDataList = specializationDataList;
@@ -35,4 +36,14 @@ class SpecializationBlocBuilder extends StatelessWidget {
       },
     );
   }
+}
+
+Widget setupLoading() {
+  return Expanded(child: Column(children: [
+
+
+    const SpecialityShimmerLoading()
+    , verticalSpace(10),
+    const DoctorsShimmerLoading()
+  ]));
 }

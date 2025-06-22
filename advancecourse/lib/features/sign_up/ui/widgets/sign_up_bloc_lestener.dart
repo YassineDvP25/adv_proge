@@ -1,4 +1,5 @@
 import 'package:advancecourse/core/helpers/extentions.dart';
+import 'package:advancecourse/core/networking/api_error_model.dart';
 import 'package:advancecourse/core/routing/routes.dart';
 import 'package:advancecourse/core/theming/colors.dart';
 import 'package:advancecourse/core/theming/styles.dart';
@@ -34,8 +35,8 @@ class SignUpBlocListener extends StatelessWidget {
               predicate: (route) => false,
             );
           },
-          error: (error) {
-            return setupErrorState(context, error);
+          error: (apiErrorModel) {
+            return setupErrorState(context, apiErrorModel);
           },
         );
       },
@@ -44,14 +45,14 @@ class SignUpBlocListener extends StatelessWidget {
   }
 }
 
-setupErrorState(BuildContext context, String error) {
+setupErrorState(BuildContext context,ApiErrorModel apiErrorModel) {
   context.pop();
   showDialog(
     context: context,
     builder: (context) {
       return AlertDialog(
         icon: Icon(Icons.error, color: Colors.red, size: 32),
-        content: Text(error, style: TextStyles.font15DarkBlueMedium),
+        content: Text(apiErrorModel.getAllErrorMessages(), style: TextStyles.font15DarkBlueMedium),
         actions: [
           TextButton(
             onPressed: () {

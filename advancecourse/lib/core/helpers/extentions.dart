@@ -35,3 +35,8 @@ extension ListExtension on List? {
     return this == null || this!.isEmpty;
   }
 }
+extension MapExtension on Map? {
+  bool isNullOrEmpty() {
+    return this == null || this!.isEmpty;
+  }
+}

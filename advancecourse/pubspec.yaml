@@ -65,6 +65,8 @@ dependencies:
   shared_preferences: ^2.5.3
   flutter_secure_storage: ^9.2.4
   shimmer_animation: ^2.2.2
+  shimmer: ^3.0.0
+  collection: ^1.19.1
 
 
 

@@ -1,3 +1,4 @@
+import 'package:advancecourse/core/networking/api_error_model.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 
@@ -8,5 +9,5 @@ class SignUpState<T> with _$SignUpState<T> {
   const factory SignUpState.loding() = Loading;
   const factory SignUpState.success(T data) =
       Success<T>;
-  const factory SignUpState.error(String error) = Error;
+  const factory SignUpState.error(ApiErrorModel apiErrorModel) = Error;
 }

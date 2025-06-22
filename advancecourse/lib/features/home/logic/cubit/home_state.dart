@@ -1,4 +1,5 @@
 import 'package:advancecourse/core/networking/api_error_handler.dart';
+import 'package:advancecourse/core/networking/api_error_model.dart';
 import 'package:advancecourse/features/home/data/models/specialization_response_model.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
@@ -17,9 +18,9 @@ class HomeState with _$HomeState {
 
   ) = SpecialazationSuccess;
 
-  const factory HomeState.specialazationError(ErrorHandler errorHandleer) =
+  const factory HomeState.specialazationError(ApiErrorModel errorModel) =
       SpecialazationError;
       //! Doctor states
       const factory HomeState.doctorSuccess(List<Doctors?>? doctors) = DoctorSuccess;
-      const factory HomeState.doctorError( ErrorHandler errorHandler ) = DoctorError;
+      const factory HomeState.doctorError( ApiErrorModel errorModel ) = DoctorError;
 }

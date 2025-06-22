@@ -28,10 +28,9 @@ class LoginCubit extends Cubit<LoginState> {
     await    saveUserToken(data.data!.token!);
         emit(LoginState.success(data));
       },
-      failure: (errorHandler) {
-        final message = errorHandler.apiErrorModel.message;
+      failure: (apiErrorModel) {
         emit(
-          LoginState.error(message is String ? message : 'An error occurred'),
+          LoginState.error(apiErrorModel),
         );
       },
     );
