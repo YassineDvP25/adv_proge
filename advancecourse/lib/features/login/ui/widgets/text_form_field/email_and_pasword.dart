@@ -37,7 +37,7 @@ class _EmailAndPaswordState extends State<EmailAndPasword> {
               }
             },
             hintText: 'Password',
-            obscureText: isObscure,
+            obscureText: false,
             suffixicon: IconButton(
 
               
