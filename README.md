@@ -1,6 +1,14 @@
+#### سبحانك لا علم لنا إلا ما علمتنا إنك أنت العليم الحكيم 
+
+
+
+
 # 👨‍⚕️ Doctor Appointment App
 
+
 A mobile app for booking doctor appointments easily.
+
+
 
 ## 📸 Screenshots
 
@@ -27,6 +35,13 @@ A mobile app for booking doctor appointments easily.
 
 
 
+### 🎥 Screen Recording
+
+https://github.com/user-attachments/assets/5adc0b54-4915-41fd-8a4e-a238a3b33718
+
+
+
+
 ---
 
 
@@ -37,6 +52,29 @@ A mobile app for booking doctor appointments easily.
 - 👤 Secure login & signup
 - 💡 Clean and modern user interface
 - 📅 View doctor availability and time slots
+
+---
+
+## 🚧 Tech Stack
+
+
+- **Flutter (Dart)** – Cross-platform mobile app development
+- **Dio + Retrofit** – For making HTTP network requests to RESTful APIs
+- **JSON Serialization** – For mapping API responses to Dart models
+- **State Management** – (Bloc)
+
+- ## 🧱 Project Structure (Clean Architecture)
+
+This project follows the Clean Architecture pattern for scalable and maintainable code.
+
+
+### ✅ Benefits:
+- Clear separation of concerns (presentation, domain, data)
+- Scalable feature-based structure
+- Easy to test and maintain
+
+
+---
 
 
 
