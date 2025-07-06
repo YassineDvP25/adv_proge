@@ -39,7 +39,7 @@ A mobile app for booking doctor appointments easily.
 
 ### 🎥 Screen Recording
 
-https://github.com/user-attachments/assets/5adc0b54-4915-41fd-8a4e-a238a3b33718
+https://github.com/user-attachments/assets/58a014e2-093d-4de3-baaa-4240f2eeda88
 
 
 
@@ -56,6 +56,9 @@ https://github.com/user-attachments/assets/5adc0b54-4915-41fd-8a4e-a238a3b33718
 - 📅 View doctor availability and time slots
 
 ---
+
+
+
 
 ## 🚧 Tech Stack
 
