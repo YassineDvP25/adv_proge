@@ -87,4 +87,3 @@ This project follows the Clean Architecture pattern for scalable and maintainabl
 
 > 📌 Feel free to fork or contribute! If you like the project, don't forget to ⭐️ the repo.
   
->>>>>>> fe3761f0b72a1c13b5c66b36310983abd6d0f128
